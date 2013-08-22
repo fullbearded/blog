@@ -14,4 +14,26 @@
 
 ![mac-android](images/mac-android_1.png)
 
+4,打开后创建一个项目。
+
+![mac-android](images/mac-android_2.png)
+
+一直next => finish 就ok
+
+5, 运行模拟器：
+
+> 菜单栏run -> run
+
+6, 安装现有的58share.apk
+
+> 注：启动模拟器后才能安装成功
+> sdk/platform-tools/adb install 58share.apk
+
+参考：http://stackoverflow.com/questions/3480201/how-do-you-install-an-apk-file-in-the-android-emulator
+
+
+
+
+
+
 
