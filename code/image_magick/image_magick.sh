@@ -69,6 +69,9 @@ convert -size 1800x1800 -strip -colors 256 -depth 8 xc:none "${demo_path}/5.png"
 convert -size 1800x1800 -strip -colors 256 -depth 8 xc:white "${demo_path}/5.png" -geometry +0+0 -composite "${demo_path}/c.png"  -gravity center -composite "${demo_path}/a.png" -gravity SouthEast -composite  -font fonts/arial.ttf -fill "#FF3399" -pointsize 150  -gravity West -draw "text 10,50 'hello world!'"  "${demo_path}/j.png" 
 
 
+### 生成简单验证码
+convert -fill black -background '#DDD' -size 80x24 -wave 4x50 -gravity Center -font ./fonts/arial.ttf -pointsize 23 -implode 0.1 label:8888  verification.jpg
+
 # 第三种方式
 convert -size 1800x1800 -strip -colors 256 -depth 8 xc:black "${demo_path}/i.png"
 composite -geometry +0+0 "${demo_path}/5.png" "${demo_path}/i.png" "${demo_path}/i.png"
