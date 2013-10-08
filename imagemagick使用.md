@@ -76,3 +76,23 @@ http://www.imagemagick.org/script/identify.php
 
 参考：http://www.imagemagick.org/script/mogrify.php
 
+
+### convert
+
+很重要的命令
+
+转换图像格式和大小，模糊，裁剪，驱除污点，抖动，临近，图片上画图片，加入新图片，生成缩略图
+
+用法：http://www.imagemagick.org/script/convert.php
+
+详见demo，例举了一些常用的用法
+
+### composite
+
+根据一个图片或多个图片组合生成图片。
+
+http://www.imagemagick.org/script/composite.php 看一下文档
+
+
+其他命令：
+http://www.imagemagick.org/script/command-line-tools.php
