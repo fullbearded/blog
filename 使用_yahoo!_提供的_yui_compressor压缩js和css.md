@@ -29,18 +29,24 @@ java -jar yuicompressor-x.y.z.jar myfile.css -o myfile-min.css --charset utf-8 -
 </pre>
 
 参数说明：
+
 --type js|css
 	压缩类型：（不用加也可以自动判断）
+	
 --charset 
 	压缩成什么编码的文件
+	
 -o file
 	压缩输出的文件地址
 	
 only javascript:
+
 --nomunge
 	只压缩，不混淆
+	
 --preserve-semi
 	保留不重要的分号(比如'}'前面的分号
+	
 --disable-optimizations
 	禁用细微优化
 	
