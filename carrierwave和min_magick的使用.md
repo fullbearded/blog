@@ -20,6 +20,7 @@ gem install mini_magick
 </pre>
 
 ## ruby相关源码
+代码片段
 
 <pre>
 
