@@ -111,7 +111,7 @@ ruby-1.9.3-p194/gems/mini_magick-3.4/lib/mini_magick.rb
 
 比如想得到deal.image 图片的高度和宽度。先使用 tempfile 创建临时文件，然后把图片从gridfs读出来写入该临时文件。然后用 MiniMagick 调用系统命令（这里是 identify).
 <pre>
- dst = Tempfile.new(RUBY_VERSION < '1.9' ? "deal": ['deal', ".jpg"])
+ dst = Tempfile.new(['deal', ".jpg"])
  dst.binmode
  dst.write deal.image.file.read
  dst.close
