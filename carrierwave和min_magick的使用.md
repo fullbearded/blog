@@ -1,4 +1,4 @@
-#carrierwave和min_magick的使用
+#carrierwave和mini_magick的使用
 
 ##安装
 
