@@ -22,6 +22,7 @@ gem install mini_magick
 ## ruby相关源码
 
 <pre>
+
   def compisite_images
     manipulate! do |img|..
       c = MiniMagick::CommandBuilder.new(:convert)
@@ -40,6 +41,7 @@ gem install mini_magick
       img
     end
   end
+  
 </pre>
 
 相关源码：
@@ -51,6 +53,7 @@ gem install mini_magick
 </pre>
 
 2. combine_options 方法:
+
 <pre>
 	ruby-1.9.3-p194/gems/mini_magick-3.4/lib/mini_magick.rb +256
 </pre>
@@ -63,6 +66,7 @@ gem install mini_magick
 
 ruby-1.9.3-p194/gems/mini_magick-3.4/lib/mini_magick.rb
 <pre>
+
 402     def run(command_builder)
 403       command = command_builder.command
 404       puts command  # 打印命令
@@ -85,6 +89,7 @@ ruby-1.9.3-p194/gems/mini_magick-3.4/lib/mini_magick.rb
 421         sub.output
 422       end
 423     end
+
 </pre>
 
 
