@@ -32,8 +32,7 @@ gem install mini_magick
       # 这样不适合在画布上绘制，所以参照其实现，修改了一下。
       c.push %Q(-size 440x629 xc:white)   # 白色背景
 	  
-	  …..
-	  # << 方法同 push相同
+	    
       c << img.path
 
       img.run(c)
