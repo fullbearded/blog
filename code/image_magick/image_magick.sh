@@ -70,7 +70,7 @@ convert -size 1800x1800 -strip -colors 256 -depth 8 xc:white "${demo_path}/5.png
 
 
 ### 生成简单验证码
-convert -fill black -background '#DDD' -size 80x24 -wave 4x50 -gravity Center -font ./fonts/arial.ttf -pointsize 23 -implode 0.1 label:8888  verification.jpg
+convert -fill black -background '#DDD' -size 80x24 -wave 4x50 -gravity Center -font ./fonts/arial.ttf -pointsize 23 -implode 0.1 label:8888  "${demo_path}/verification.jpg"
 
 # 第三种方式
 convert -size 1800x1800 -strip -colors 256 -depth 8 xc:black "${demo_path}/i.png"
