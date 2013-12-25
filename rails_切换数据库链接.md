@@ -60,7 +60,7 @@
 我们可以在我们项目使用：来切换数据库
 
 <pre>
-class User \< ActiveRecord::Base
+class User < ActiveRecord::Base
   include ::W58share::DbConnection
 end
 
