@@ -63,6 +63,11 @@ crontab -e
 </pre>
 
 
+#### SSH密钥登陆
+
+参考：http://blog.58share.com/?p=289
+
+
 ## 1. vim
 
 #### 简介
