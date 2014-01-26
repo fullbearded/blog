@@ -1,19 +1,22 @@
-# mac 使用sublime
+# mac 使用sublime编辑器
+
+### 在terminal 下使用sublime
+
+<pre>
+sudo ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/bin/subl
+
+source ~/.bashrc
+
+subl your_directory
+</pre>
+
+
+### 使用
 
 1. 安装sublime
 
 下载安装
 <a href="http://www.sublimetext.com/dev">下载</a>
-
-2. 生成软链接
-
-<pre>
-ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
-
-source ~/.bashrc
-
-subl 1.txt
-</pre>
 
 3. 插件安装
 
