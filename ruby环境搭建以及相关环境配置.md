@@ -495,6 +495,50 @@ vim /etc/rc.local
 /etc/init.d/redis start
 </pre>
 
+## varnish (一般用于生产环境)
+
+#### 简介
+
+Varnish是一款高性能、开源的反向代理服务器和缓存服务器
+
+#### 安装
+1. yum install -y varnish
+
+2.
+<pre>
+
+wget http://repo.varnish-cache.org/source/varnish-3.0.4.tar.gz
+tar zxf varnish-3.0.4.tar.gz
+cd varnish-3.0.4
+
+./configure
+make
+make check (检测是否有错)
+make install
+</pre>
+
+#### 启动
+<pre>
+# 下载配置文件
+cd /usr/local/etc/varnish/
+wget https://raw.github.com/huhongda/scripts/master/varnish_default.vcl
+
+mkdir -p /data/data/varnish
+
+varnishd -f /usr/local/etc/varnish/varnish_default.vcl -a 0.0.0.0:80 -s file,/data/data/varnish/varnish_cache.data,128m -T 127.0.0.1:3500
+
+#  -T 是管理地址  -a 就是绑定地址
+# 注：同端口只能存在一个!
+# 可以通过nginx转发
+</pre>
+
+了解更多参考：
+
+http://varnish-cache.org/
+
+http://www.programmer.com.cn/14315/
+
+
 ## rbenv
 
 ####  简介
@@ -533,15 +577,23 @@ eval "$(rbenv init -)"
 
 <pre>
 rbenv install --list  # 列出所有 ruby 版本
-rbenv install 1.9.3-p392     # 安装 1.9.3-p392
+rbenv install 1.9.3-p484     # 安装 1.9.3-p392
 rbenv versions               # 列出安装的版本
 rbenv version                # 列出正在使用的版本
-rbenv global 1.9.3-p392      # 默认使用 1.9.3-p392
-rbenv shell 1.9.3-p392       # 当前的 shell 使用 1.9.3-p392, 会设置一个 `RBENV_VERSION` 环境变量
-benv local jruby-1.7.3      # 当前目录使用 jruby-1.7.3, 会生成一个 `.rbenv-version` 文件
-
+rbenv global 1.9.3-p484      # 默认使用 1.9.3-p392
+rbenv shell 1.9.3-p484       # 当前的 shell 使用 1.9.3-p392, 会设置一个 `RBENV_VERSION` 环境变量
+benv local 1.9.3-p484      # 当前目录使用 jruby-1.7.3, 会生成一个 `.rbenv-version` 文件
 rbenv rehash                 # 每当切换 ruby 版本和执行 bundle install 之后必须执行这个命令
 rbenv which irb              # 列出 irb 这个命令的完整路径
 rbenv whence irb             # 列出包含 irb 这个命令的版本
 </pre>
+
+<pre>
+gem install bundler 
+
+通过bundle来管理gem包
+</pre>
+
+
+
 
