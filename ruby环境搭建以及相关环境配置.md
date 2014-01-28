@@ -555,7 +555,7 @@ rvm 的安装使用参考： http://ruby-china.org/wiki/rvm-guide
 
 具体参考：http://ruby-china.org/wiki/rbenv-guide
 
-#### 安装
+#### 安装 1.
 <pre>
 git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
 # 用来编译安装 ruby
@@ -577,6 +577,13 @@ eval "$(rbenv init -)"
 
 执行： source ~/.bash_profile
 
+#### 安装2.
+
+<pre>
+curl https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
+</pre>
+
+https://github.com/fesplugas/rbenv-installer
 
 #### 使用
 
