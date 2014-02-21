@@ -26,15 +26,15 @@ su - git
 
 <pre>
 
-git clone git://github.com/sitaramc/gitolite
+  $ git clone git://github.com/sitaramc/gitolite
 
-mkdir -p $HOME/bin
+  $ mkdir -p $HOME/bin
 
-gitolite/install -to $HOME/bin
+  $ gitolite/install -to $HOME/bin
 
-mv /tmp/id_rsa.pub admin.pub
+  $ mv /tmp/id_rsa.pub admin.pub
 
-$HOME/bin/gitolite setup -pk admin.pub # 根据公钥形成管理员
+  $ $HOME/bin/gitolite setup -pk admin.pub # 根据公钥形成管理员
 
 </pre>
 
