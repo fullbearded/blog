@@ -23,6 +23,7 @@ su - git
 </pre>
 
 2. 安装gitolite
+
 <pre>
 
 git clone git://github.com/sitaramc/gitolite
@@ -34,6 +35,7 @@ gitolite/install -to $HOME/bin
 mv /tmp/id_rsa.pub admin.pub
 
 $HOME/bin/gitolite setup -pk admin.pub # 根据公钥形成管理员
+
 </pre>
 
 
