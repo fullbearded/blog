@@ -1,6 +1,19 @@
 # gitlab 的安装使用以及数据结构
 
+## 简介
+GitLab 是一个用于仓库管理系统的开源项目。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。
+
+
+
 ## 安装
+
+### 一键安装
+gitlab installer
+
+refer: http://bitnami.com/stack/gitlab/installer
+
+### 手动安装
+
 
 环境：
  
@@ -11,7 +24,6 @@
 #### 1: install vim
 
 <code>yum install -y vim</code>
-
 
 #### 2: install git > 1.7.10
 
@@ -306,7 +318,7 @@ $ vim config/environments/production.rb
     :address              => 'smtp.exmail.qq.com',
     :port                 => 465,
     :domain               => 'qq.com',
-    :user_name            => 'huhongda@cd.tuan800.com',
+    :user_name            => 'your_email',
     :password             => 'password',
     :authentication       =>  :plain,
     :enable_starttls_auto => true
@@ -481,11 +493,14 @@ echo '/data/swapdir/swapfile  swap  swap defaults 0 0' >> /etc/fstab
 ## Reference
 
 http://mrk1869.com/blog/gitlab_installation/
-http://www.digitalsanctuary.com/tech-blog/general/installing-gitlab-on-redhat-enterprise-5-rhel-5.html
-https://gitlab.com/gitlab-org/gitlab-ce/blob/6-6-stable/doc/install/installation.md
-http://git.58share.com/help/api/README
 
-# this is a project for gitlab api
+http://www.digitalsanctuary.com/tech-blog/general/installing-gitlab-on-redhat-enterprise-5-rhel-5.html
+
+https://gitlab.com/gitlab-org/gitlab-ce/blob/6-6-stable/doc/install/installation.md
+
+https://github.com/gitlabhq/gitlabhq/blob/master/doc/api/README.md
+
+# project for gitlab api
 https://github.com/NARKOZ/gitlab
 
 https://github.com/gitlabhq/gitlabhq/blob/master/doc/api/groups.md
