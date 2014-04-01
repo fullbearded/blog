@@ -192,4 +192,20 @@ Model.stub!(:a)
 
 
 
+## 附件：性能对比
+
+* normal
+
+rspec spec  385.25s user 14.18s system 92% cpu 7:09.53 total
+
+* delete unlawful spec 
+
+rspec spec  363.88s user 13.93s system 93% cpu 6:45.14 total
+
+* parallel_tests 4 process
+
+rake 'parallel:spec'  625.48s user 29.18s system 238% cpu 4:34.13 total
+
+
+
 
