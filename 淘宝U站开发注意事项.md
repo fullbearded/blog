@@ -48,16 +48,23 @@ http://newwiki.zx.taobao.com/index.php?title=TAE_PHP%E5%BA%94%E7%94%A8%E5%BC%80%
 请参考：http://newwiki.zx.taobao.com/index.php?title=HTML_WHITELIST 中的class命名规范
 #### 经常用的css样式不生效？
 css也有白名单：http://newwiki.zx.taobao.com/index.php?title=CSS_WHITELIST 并且淘宝规定布局规范如下：
+
 <pre>
+
 z-index
 0 >= z-index <= 99
 
 950控制
 所有模板宽度不超过950
+
 </pre>
 
 
-并且最好尽量少的使用复合型的样式属性，如：font在本次项目开发中就遇到这个问题：font：blod 14px/40px “”;这种样式在线下的测试环境毫无问题上线之后taobao对css进行压缩的时候就会自动把这个属性给干掉；
+并且最好尽量少的使用复合型的样式属性，
+
+如：font在本次项目开发中就遇到这个问题：<code>font：blod 14px/40px “”;</code>
+
+这种样式在线下的测试环境毫无问题上线之后taobao对css进行压缩的时候就会自动把这个属性给干掉；
 
 
 #### 使用php循环函数（for，foreach，while等）的时候有些值没有遍历出来？
