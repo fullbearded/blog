@@ -30,8 +30,8 @@ su - git
 
   $ mkdir -p $HOME/bin
 
-  $ gitolite/install -to $HOME/bin
-
+  $ gitolite/install -ln
+  
   $ mv /tmp/id_rsa.pub admin.pub
 
   $ $HOME/bin/gitolite setup -pk admin.pub # 根据公钥形成管理员
@@ -57,3 +57,26 @@ host git
 git clone git:gitolite-admin  将管理员配置地址clone下来
 
 ## 通过gitolite-admin管理git仓库
+
+<pre>
+$ cd ~/gitolite-admin/
+$ ls
+conf/  keydir/
+$ find conf keydir -type f
+conf/gitolite.conf
+keydir/scott.pub
+$ cat conf/gitolite.conf
+
+repo gitolite-admin
+    RW+                 = scott
+
+repo testing
+    RW+                 = @all
+</pre>
+
+
+## Rerference
+
+http://git-scm.com/book/zh/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Gitolite
+
+
