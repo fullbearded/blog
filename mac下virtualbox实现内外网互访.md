@@ -18,11 +18,12 @@
 
 进入 virtualbox - Preferences 设置
 
-![virtbox-1.png](https://raw.githubusercontent.com/huhongda/blog/master/images/virtualbox-1.png)
+![virtbox-1.png](https://raw.githubusercontent.com/huhongda/blog/master/images/virtualbox-0.png)
 
 如果host-only networks中没有adapter, 需要添加一个
 
 2. set network
+![virtbox-1.png](https://raw.githubusercontent.com/huhongda/blog/master/images/virtualbox-1.png)
 
 ![virtualbox-2.png](https://raw.githubusercontent.com/huhongda/blog/master/images/virtualbox-2.png)
 
